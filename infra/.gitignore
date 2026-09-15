@@ -1,0 +1,23 @@
+# --- SEGURIDAD CRITICA: Credenciales AWS locales ---
+aws/config
+aws/credentials
+
+# --- Variables de Terraform con datos sensibles ---
+*.tfvars
+*.tfvars.json
+
+# --- Directorio de trabajo de Terraform ---
+.terraform/
+.terraform.lock.hcl
+terraform/.terraform/
+
+# --- Archivos de estado (state) de Terraform ---
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+*.tfstate.lock.info
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+.env

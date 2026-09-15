@@ -1,0 +1,6 @@
+# Copia este archivo a terraform.tfvars y ajusta los valores.
+# terraform.tfvars esta en .gitignore, nunca se sube al repo.
+
+aws_region  = "us-east-1"
+bucket_name = "eagleboots-frontend-site"
+enable_waf  = false

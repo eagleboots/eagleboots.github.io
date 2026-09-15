@@ -1,0 +1,3 @@
+[profile eagleboots]
+region = us-east-1
+output = json

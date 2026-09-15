@@ -1,0 +1,7 @@
+services:
+  eagleboots:
+    build: .
+    container_name: eagleboots
+    ports:
+      - "8080:80"
+    restart: unless-stopped

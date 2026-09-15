@@ -1,0 +1,38 @@
+services:
+  terraform:
+    build:
+      context: .
+      args:
+        TERRAFORM_VERSION: 1.10.5
+    image: eagleboots-terraform:1.10.5
+    container_name: tf-eagleboots-frontend
+    # Evita que los archivos creados dentro del contenedor queden como root
+    user: "${CURRENT_UID:-1000}:${CURRENT_GID:-1000}"
+    volumes:
+      - ./terraform:/workspace
+      - ./aws:/home/terraform/.aws:ro
+    environment:
+      - AWS_DEFAULT_REGION=${AWS_REGION:-us-east-1}
+      - AWS_PROFILE=${AWS_PROFILE:-eagleboots}
+      - AWS_SHARED_CREDENTIALS_FILE=/home/terraform/.aws/credentials
+      - AWS_CONFIG_FILE=/home/terraform/.aws/config
+      - TF_DATA_DIR=/workspace/.terraform
+    command: --help
+
+  deploy:
+    build:
+      context: ..
+      dockerfile: infra/deploy.Dockerfile
+    image: eagleboots-deploy:latest
+    container_name: eagleboots-deploy
+    working_dir: /app
+    volumes:
+      # Repo completo montado: deploy.sh sincroniza el sitio estatico y lee
+      # infra/.env el mismo desde dentro del contenedor.
+      - ..:/app
+      # Credenciales AWS locales, de solo lectura (ver infra/aws/*.example).
+      - ./aws:/root/.aws:ro
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/root/.aws/credentials
+      - AWS_CONFIG_FILE=/root/.aws/config
+    entrypoint: ["bash", "infra/deploy.sh"]

@@ -1,5 +1,4 @@
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,16 +16,21 @@
     
                 </span></p>
             </div>
-            <div class="vaca">
-              
+            <div class="header--acciones">
+                <nav class="menu" id="menuNav">
+                    <ul class="navegacion">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="https://i.pinimg.com/originals/28/d0/df/28d0dfcc6b85af649862b903a75e38c1.jpg">consejos</a></li>
+                        <li><a href="#">Iniciar Session</a><a href="#">Registrar</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo oscuro" title="Cambiar tema">🌙</button>
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <nav class="menu">
-                <ul class="navegacion">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="https://i.pinimg.com/originals/28/d0/df/28d0dfcc6b85af649862b903a75e38c1.jpg">consejos</a></li>
-                    <li><a href="#">Iniciar Session</a><a href="#">Registrar</a></li>
-                </ul>
-            </nav>
         </header>
         <aside class="presentacion">
             <div class="informacion">
@@ -54,10 +58,8 @@
                     <p>son unas de las mas contaminantes ya que son echas a base de plomo que al tocar el  agua lo contamina</p>
                     <div class="plato--info">
                         <p>12%</p>
-                        <a href="https://image.slidesharecdn.com/bateriadeplomoacido-111212055815-phpapp02/85/batera-de-plomo-cido-2-320.jpg?cb=1666259922">
-                        <button type="button">+</button>
-                        </a>
-                    </div>                    
+                        <button type="button" class="ver-mas" data-img="https://image.slidesharecdn.com/bateriadeplomoacido-111212055815-phpapp02/85/batera-de-plomo-cido-2-320.jpg?cb=1666259922" data-titulo="Bateria de plomo" aria-label="Ver imagen ampliada">+</button>
+                    </div>
                 </article>
                 <article class="plato">
                     <img src="imagenes/vaca.jpg" alt="Pollo frito">
@@ -65,10 +67,8 @@
                     <p>La industria ganadera es productora de la mayor cantidad de dioxido de carbono</p>
                     <div class="plato--info">
                         <p>14%</p>
-                        <a href="https://th.bing.com/th/id/R.63237ad6e71e4ba375d15f8aff5aa260?rik=1z5a7kfwkxRmJw&pid=ImgRaw&r=0&sres=1&sresct=1">
-                        <button type="button">+</button>  
-                    </a>
-                    </div>                    
+                        <button type="button" class="ver-mas" data-img="https://th.bing.com/th/id/R.63237ad6e71e4ba375d15f8aff5aa260?rik=1z5a7kfwkxRmJw&pid=ImgRaw&r=0&sres=1&sresct=1" data-titulo="Vacas y el dioxido de carbono" aria-label="Ver imagen ampliada">+</button>
+                    </div>
                 </article>
                 <article class="plato">
                     <img src="imagenes/po.jpg" alt="Papas fritas">
@@ -76,10 +76,8 @@
                     <p>los automoviles de conbustible son bastante contaminantes por que son avace de conbustibles fosiles</p>
                     <div class="plato--info">
                         <p>25%</p>
-                        <a href="https://res.cloudinary.com/postedin/image/upload/v1/66e630dc-eb7d-47a6-8e98-fa36a7cb8bff/infografias-derco-como-es-el-mercado-de-autos-electricos-en-chile-02">
-                        <button type="button">+</button> 
-                    </a>
-                    </div>                    
+                        <button type="button" class="ver-mas" data-img="https://res.cloudinary.com/postedin/image/upload/v1/66e630dc-eb7d-47a6-8e98-fa36a7cb8bff/infografias-derco-como-es-el-mercado-de-autos-electricos-en-chile-02" data-titulo="Automoviles" aria-label="Ver imagen ampliada">+</button>
+                    </div>
                 </article>
                 <article class="plato">
                     <img src="imagenes/R.jpg" alt="Hamburguesa XL">
@@ -87,17 +85,60 @@
                     <p>La escases de agua fue por un mal uso de la humanidad por que jamas se tomo como prioridad</p>
                     <div class="plato--info">
                         <p>40% sobra de agua en el mundo</p>
-                        
-                        <a href="https://th.bing.com/th/id/R.b10e9288d2105dab7baefed6311e5160?rik=7JxvxILE%2fQjOqA&riu=http%3a%2f%2fwww.fundacionunam.org.mx%2fwp-content%2fuploads%2f2016%2f09%2fagua_contenido1.jpg&ehk=1g5hovwmHWp08mqyQtSeRf7ii3YcI8W5cxgw5VPfOEU%3d&risl=&pid=ImgRaw&r=0">
-                        <button type="button">+</button>
-
-
-                    </div>                    
+                        <button type="button" class="ver-mas" data-img="https://th.bing.com/th/id/R.b10e9288d2105dab7baefed6311e5160?rik=7JxvxILE%2fQjOqA&riu=http%3a%2f%2fwww.fundacionunam.org.mx%2fwp-content%2fuploads%2f2016%2f09%2fagua_contenido1.jpg&ehk=1g5hovwmHWp08mqyQtSeRf7ii3YcI8W5cxgw5VPfOEU%3d&risl=&pid=ImgRaw&r=0" data-titulo="Escasez de agua" aria-label="Ver imagen ampliada">+</button>
+                    </div>
                 </article>
             </div>
         </main>
+        <footer class="footer">
+            <div class="footer--top">
+                <div class="footer--marca">
+                    <p class="logo">prepa<span>4 UAEmex</span></p>
+                    <p>Informamos sobre las principales fuentes de contaminación para impulsar decisiones mas responsables con el planeta.</p>
+                </div>
+                <div class="footer--columna">
+                    <h3>Contaminantes</h3>
+                    <ul>
+                        <li><a href="#">Bateria de plomo</a></li>
+                        <li><a href="#">Vacas y el dioxido de carbono</a></li>
+                        <li><a href="#">Automoviles</a></li>
+                        <li><a href="#">Escasez de agua</a></li>
+                    </ul>
+                </div>
+                <div class="footer--columna">
+                    <h3>Sitio</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="https://i.pinimg.com/originals/28/d0/df/28d0dfcc6b85af649862b903a75e38c1.jpg">Consejos</a></li>
+                        <li><a href="#">Iniciar Session</a></li>
+                        <li><a href="#">Registrar</a></li>
+                    </ul>
+                </div>
+                <div class="footer--columna">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="mailto:contacto@prepa4uaemex.mx">contacto@prepa4uaemex.mx</a></li>
+                        <li>Toluca, Estado de Mexico</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer--bottom">
+                <p>&copy; <span id="anioActual"></span> prepa4 UAEmex. Proyecto informativo con fines educativos.</p>
+            </div>
+        </footer>
     </div>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-caja" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+            <button type="button" class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">&times;</button>
+            <div class="modal-imagen">
+                <img id="modalImagen" src="" alt="">
+            </div>
+            <h3 id="modalTitulo" class="modal-titulo"></h3>
+        </div>
+    </div>
+    <script src="theme.js"></script>
+    <script src="modal.js"></script>
+    <script src="menu.js"></script>
+    <script>document.getElementById('anioActual').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-       

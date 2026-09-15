@@ -206,12 +206,6 @@
   }
   
   /**
-   * Correct the inability to style buttons in iOS and Safari.
-   */
-  
- 
-  
-  /**
    * Correct the padding in Firefox.
    */
   
@@ -278,13 +272,6 @@
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
   }
-  
-  /**
-   * 1. Correct the odd appearance in Chrome, Edge, and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-  
- 
   
   /**
    * Correct the cursor style of increment and decrement buttons in Safari.
