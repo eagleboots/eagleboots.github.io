@@ -198,15 +198,34 @@ img{
         gap: 50px;
     }
 }
-.navegacion a{
+.navegacion a,
+.navegacion .ver-mas--enlace{
     text-decoration: none;
     color: var(--color-text-muted);
     font-weight: 500;
     font-size: 15px;
     transition: color 0.2s ease;
 }
-.navegacion a:hover{
+.navegacion a:hover,
+.navegacion .ver-mas--enlace:hover{
     color: var(--color-text);
+}
+
+/* Botones "ver mas" que se ven como enlaces de texto (menu, footer) */
+.ver-mas--enlace{
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+.ver-mas--enlace:hover{
+    filter: none;
+    transform: none;
 }
 .navegacion li:last-child{
     display: flex;
@@ -459,12 +478,15 @@ img{
     color: var(--color-text-muted);
     font-size: 14px;
 }
-.footer--columna a{
+.footer--columna a,
+.footer--columna .ver-mas--enlace{
     color: inherit;
     text-decoration: none;
+    font-size: inherit;
     transition: color 0.2s ease;
 }
-.footer--columna a:hover{
+.footer--columna a:hover,
+.footer--columna .ver-mas--enlace:hover{
     color: var(--color-accent);
 }
 .footer--bottom{
